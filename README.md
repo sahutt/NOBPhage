@@ -2,7 +2,7 @@
 NOB Phage Bioinformatics Pipeline
 
 
-A bioinformatics pipeline meant for finding bacteriophage and prophage in metagenomic datasets. All bash scripts are meant for use on the Northwestern HPCC Quest. Pipeline was developed with the help of McKenna Farmer, Alexander McFarland, Siam Racha
+A bioinformatics pipeline meant for finding bacteriophage and prophage in metagenomic datasets. All bash scripts are meant for use on the Northwestern HPCC Quest. Pipeline was developed with the help of McKenna Farmer, Alexander McFarland, Siam Racharaks, and Ryan Blaustein.
 
 Pipeline and Program Installation in Quest
 
