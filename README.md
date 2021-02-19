@@ -23,11 +23,11 @@ Assembly
 Megahit - on Quest
 
 Spades 3.15 - new version not on quest, can install onto quest but error during installation test need to take limit off threads
-
-https://academic.oup.com/bioinformatics/article-abstract/36/14/4126/5837667
+Spades 3.15 GitHub - https://cab.spbu.ru/files/release3.15.0/manual.html
+MetaViralSpades pub: https://academic.oup.com/bioinformatics/article-abstract/36/14/4126/5837667
 
 Read Alignment
-Bowtie 2
+Bowtie 2 http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
 
 Binning
 Metawrap 
@@ -38,6 +38,10 @@ CheckV - installed in conda-envs/checkv in p31378 (source activate checkv)
 https://bitbucket.org/berkeleylab/checkv/src/master/
 
 CheckM (on Quest)
+
+Phage Finders
+VIBRANT https://github.com/AnantharamanLab/VIBRANT
+Virsorter2
 
 Annotation
 Demovir
