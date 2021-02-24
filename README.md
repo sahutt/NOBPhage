@@ -29,23 +29,20 @@ MetaViralSpades pub: https://academic.oup.com/bioinformatics/article-abstract/36
 Read Alignment
 Bowtie 2 http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
 
-Binning
-Metawrap 
-https://github.com/bxlab/metaWRAP
+MAG Binning  
+[Metawrap](https://github.com/bxlab/metaWRAP)
 
 Check Binning Quality
-CheckV - installed in conda-envs/checkv in p31378 (source activate checkv) 
-https://bitbucket.org/berkeleylab/checkv/src/master/
+[CheckV](https://bitbucket.org/berkeleylab/checkv/src/master/) - installed in conda-envs/checkv in p31378 (source activate checkv)  
 
-CheckM (on Quest)
+CheckM (on Quest)  
 
-Phage Finders
-VIBRANT https://github.com/AnantharamanLab/VIBRANT
-Virsorter2
+Phage identification and annotation  
+[VIBRANT](https://github.com/AnantharamanLab/VIBRANT)  
+[Virsorter2](https://github.com/jiarong/VirSorter2)    
 
-Annotation
-Demovir
-https://github.com/feargalr/Demovir
+Phage annotation only   
+[Demovir](https://github.com/feargalr/Demovir) - not actively developed  
 Prokka?
 …
 
