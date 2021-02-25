@@ -4,7 +4,7 @@ The purpose of this document is to provide a brief overview of the installation 
 Jump to:  
 [VirSorter2](#virsorter2)  
 [VIBRANT](#vibrant)  
-[CheckV](#checkv)
+[CheckV](#checkv)  
 [Demovir](#demovir)
 
 
@@ -22,17 +22,17 @@ the above version can occasionally toss up errors, you can use this version as w
 install with conda   
 ```conda create --prefix /path/to/env/virsorter -c bioconda virsorter=2```
 
-start up the virsorter conda environment (make sure to activate anaconda if you're starting a new session or writing this in a bash script)  
+start up the VirSorter conda environment (make sure to activate anaconda if you're starting a new session or writing this in a bash script)  
 ```source activate /projects/p31378/conda_envs/virsorter2```
 
-run virsorter  
+run VirSorter
 ```virsorter run -w test.out -i test.fa all```  
 -w directory  
 -i input contigs/genome  
 all - runs entire pipeline  
 you can replace "all" with classify, which only runs classification step if you want to test different cutoff scores
 
-exit virsorter  
+exit VirSorter  
 ```source deactivate```
 
 
@@ -85,6 +85,21 @@ exit VIBRANT
 ## CheckV  
 CheckV is used to assess the quality and completeness of viral contigs.  
 --how to use it--  
+load in the anaconda module  
+```module load python-anaconda3/2019.10```  
+
+the above version can occasionally toss up errors, you can use this version as well  
+```module load python/anaconda3.6```  
+
+install with conda   
+```conda create --prefix /path/to/env/checkv -c conda-forge -c bioconda checkv```
+
+start up the CheckV conda environment  
+```source activate /projects/p31378/conda_envs/checkv```
+
+run CheckV  
+```code here```
+-flag info here  
 
 ---
 ## Demovir   
