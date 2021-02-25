@@ -4,6 +4,7 @@ The purpose of this document is to provide a brief overview of the installation 
 Jump to:  
 [VirSorter2](#virsorter2)  
 [VIBRANT](#vibrant)
+[Demovir](#demovir)
 
 
 ## VirSorter2
@@ -63,7 +64,7 @@ download databases
 start up the VIBRANT conda environment  
 ```source activate /projects/p31378/conda_envs/vibrant```
 
-run VIBRANT - specify the databases with the -d flag, I still had to do this after I ran ```VIBRANT_setup.py --test``` ¯\_(ツ)_/¯  
+run VIBRANT - specify the databases with the -d flag, I still had to do this after I ran ```VIBRANT_setup.py --test``` :shrug:    
 
 ```
 VIBRANT_run.py -i /projects/p31378/comammox/results/metaviralspades/SG_01_11_2017/contigs.fasta \
@@ -79,3 +80,7 @@ VIBRANT_run.py -i /projects/p31378/comammox/results/metaviralspades/SG_01_11_201
 
 exit VIBRANT  
 ```source deactivate```
+
+---
+## Demovir  
+...maybe
