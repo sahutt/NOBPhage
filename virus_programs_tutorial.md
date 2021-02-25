@@ -79,12 +79,18 @@ VIBRANT_run.py -i /projects/p31378/comammox/results/metaviralspades/SG_01_11_201
 -folder specify output folder  
 -virome assumes the contigs are mostly viral sequences, use with metaviralspades output  
 
-exit VIBRANT  
+exit VIBRANT   
 ```source deactivate```
+
 ---
+
+
 ## CheckV  
-CheckV is used to assess the quality and completeness of viral contigs.  
+[BitBucket](https://bitbucket.org/berkeleylab/checkv/src/master/)  
+
+CheckV is used to assess the quality and completeness of viral contigs.   
 --how to use it--  
+
 load in the anaconda module  
 ```module load python-anaconda3/2019.10```  
 
@@ -102,5 +108,6 @@ run CheckV
 -flag info here  
 
 ---
+
 ## Demovir   
 ...maybe
