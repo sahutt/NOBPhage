@@ -1,8 +1,6 @@
-# NOBPhage
-NOB Phage Bioinformatics Pipeline
+# Viral Bioinformatics Pipeline
 
-
-A bioinformatics pipeline meant for finding bacteriophage and prophage in metagenomic datasets. All bash scripts are meant for use on the Northwestern HPCC Quest. Pipeline was developed by McKenna Farmer, Stefanie Huttelmaier, Alexander McFarland, Siam Racharaks, and Ryan Blaustein.
+The purpose of the git repository is to act as a guide through a bioinformatics pipeline meant for finding bacteriophage and prophage in metagenomic datasets. All bash scripts are meant for use on the Northwestern HPCC Quest. Pipeline was developed by McKenna Farmer, Stefanie Huttelmaier, Alexander McFarland and Siam Racharaks.
 
 Pipeline and Program Installation in Quest
 
