@@ -4,7 +4,7 @@ The purpose of the git repository is to act as a guide through a bioinformatics 
 
 ## Getting your Data Onto Quest
 
-###Directly from your computer: 
+### Directly from your computer: 
 
 If you have data on your computer and need to get it onto Quest, you will need to download an FTP solution like Filezilla or Cyberduck. These GUI's will connect you to Quest and allow you to browse through directories like you would on your PC. You can also upload or download files directly from the Quest server using this software, which becomes useful for viewing results and writing bash scripts from your computer rather than the nano  
 
