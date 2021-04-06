@@ -4,8 +4,17 @@ The purpose of the git repository is to act as a guide through a bioinformatics 
 
 Pipeline and Program Installation in Quest
 
-QC
-FastQC - on Quest
+# Getting your Data Onto Quest
+
+To get
+
+
+
+# QC - Quality Control 
+Program: FastQC
+Module available on Quest
+
+First, we need to check the quality of our metagenomic reads and determine what type of quality control steps are necessary. 
 
 
 Add - creating a conda environment 
