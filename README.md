@@ -4,7 +4,7 @@ The purpose of the git repository is to act as a guide through a bioinformatics 
 
 Pipeline and Program Installation in Quest
 
-# Getting your Data Onto Quest
+## Getting your Data Onto Quest
 
 Directly from your computer: 
 
