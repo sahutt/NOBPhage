@@ -26,20 +26,26 @@ In this manner you can import single and paired end reads into the working direc
 SRR10744092
 
 SRR10744093 
-SRR10744094
-SRR10744095
-etc.
 
+SRR10744094
+
+etc.
 
 #### awk 
 
-An awk command can create a bash script for large sample sets by repeating the same command on a list of items line by line. So, we can use the accession list we retrieved from SRA to download the desired files. You can see an example of a simple awk created to import a list of files [here](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.awk). Now we should have a document that looks like this:
+An awk command can create a bash script for large sample sets by repeating the same command on a list of items line by line. So, we can use the accession list we retrieved from SRA to download the desired files. You can see an example of a simple awk created to import a list of files [here](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.awk). Once the awk is created, you can create your bash script using the following awk command:
 
-fasterq-dump SRR6800320
+awk -f file.awk list.txt > fasterqdump.sh
+the command takes the awk script you just made, and the accession list text file then creates the bash script document you want
+
+Now we should have a document in your working directory that looks like this:
+
+fasterq-dump SRR6800320 
+
 fasterq-dump SRR6800323
+
 fasterq-dump SRR6800324
-fasterq-dump SRR6800325
-fasterq-dump SRR6800326
+
 etc.
 
 Add your header to the [bash script](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.sh), and a command to gzip all the downloaded .fastq files and submit. 
