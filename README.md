@@ -16,10 +16,13 @@ Both are free and will make browsing Quest much simpler, especially if you aren'
 
 ### From NCBI:
 
-When conducting a meta-analysis where you have identified data 
+When conducting a meta-analysis where you have identified data that needs to be retrieved from the sequencing read archive (SRA) on NCBI, you can directly download those data files to Quest from NCBI using the SRA toolkit. Using the Bioproject number 
 
 
-# QC - Quality Control 
+# QC - Quality Control
+
+## Raw Read QC Check 
+
 Program: FastQC
 Module available on Quest
 
@@ -29,7 +32,11 @@ First, we need to check the quality of our metagenomic reads and determine what 
 Add - creating a conda environment 
 
 # Read Trimming 
-Fastp - environment created in p31378 
+
+
+[fastp](https://github.com/OpenGene/fastp) 
+
+
 
 To use:
 Module load python/anaconda
@@ -50,11 +57,10 @@ MetaViralSpades pub: https://academic.oup.com/bioinformatics/article-abstract/36
 
 ### SPAdes v3.15 - metaviralSPAdes - extrachromosomal assembly 
 
-# Read Alignment
-Bowtie 2 http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
-
 # MAG Binning  
 [Metawrap](https://github.com/bxlab/metaWRAP)
+
+Metawrap includes read alignment in the module. 
 
 # Check Binning Quality
 
@@ -78,7 +84,6 @@ Phage annotation only
 [Demovir](https://github.com/feargalr/Demovir) - not actively developed  
 Prokka?
 …
-
 
 
 
