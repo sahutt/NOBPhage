@@ -16,7 +16,23 @@ Both are free and will make browsing Quest much simpler, especially if you aren'
 
 ### From NCBI:
 
-When conducting a meta-analysis where you have identified data that needs to be retrieved from the sequencing read archive (SRA) on NCBI, you can directly download those data files to Quest from NCBI using the SRA toolkit. Using the Bioproject number 
+When conducting a meta-analysis where you have identified data that needs to be retrieved from the sequencing read archive (SRA) on NCBI, you can directly download those data files to Quest from NCBI using the [SRA toolkit](https://github.com/ncbi/sra-tools):
+
+module load sratoolkit
+fasterqdump SRR########
+
+In this manner you can import single and paired end reads into the working directory one at a time. For studies with a large number of samples to import, we can use an awk command to create a bash script to do the work for us. First, download the accession list from the project site on NCBI. This should take the form of a list of SRA accession numbers like this:
+
+SRR10744092
+SRR10744093
+SRR10744094
+SRR10744095
+etc.
+
+
+#### awk 
+
+An awk command can create a bash script for large sample sets by repeating the same command on a list of items line by line. So, we can use the accession list we retrieved from SRA to download the desired files. You can see an example of a simple awk created to import a list of files [here](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.awk) 
 
 
 # QC - Quality Control
