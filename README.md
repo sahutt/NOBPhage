@@ -32,11 +32,20 @@ etc.
 
 #### awk 
 
-An awk command can create a bash script for large sample sets by repeating the same command on a list of items line by line. So, we can use the accession list we retrieved from SRA to download the desired files. You can see an example of a simple awk created to import a list of files [here](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.awk) 
+An awk command can create a bash script for large sample sets by repeating the same command on a list of items line by line. So, we can use the accession list we retrieved from SRA to download the desired files. You can see an example of a simple awk created to import a list of files [here](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.awk). Now we should have a document that looks like this:
 
+fasterq-dump SRR6800320
+fasterq-dump SRR6800323
+fasterq-dump SRR6800324
+fasterq-dump SRR6800325
+fasterq-dump SRR6800326
+etc.
+
+Add your header to the [bash script](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.sh), and a command to gzip all the downloaded .fastq files and submit. 
 
 # QC - Quality Control
 
+Now that you have your reads safely imported and compressed on quest, we can fun quality control. 
 ## Raw Read QC Check 
 
 Program: FastQC
