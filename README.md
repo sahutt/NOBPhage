@@ -65,7 +65,6 @@ Add - creating a conda environment
 
 # Read Trimming 
 
-
 Program: [fastp](https://github.com/OpenGene/fastp) 
 fastp is not available on Quest, but can be installed through bioconda and accessed through a conda environment
 
@@ -124,6 +123,8 @@ Phage annotation only
 [Demovir](https://github.com/feargalr/Demovir) - not actively developed  
 Prokka?
 …
+
+# Installing a conda
 
 
 
