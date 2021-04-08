@@ -124,7 +124,8 @@ Phage annotation only
 Prokka?
 …
 
-# Installing a conda
+# Installing a conda 
+
 
 
 
