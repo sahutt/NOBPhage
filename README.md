@@ -15,10 +15,12 @@ If you have data on your computer and need to get it onto Quest, you will need t
 Both are free and will make browsing Quest much simpler, especially if you aren't used to moving around the directory system from the command line. I preferred Filezilla. I felt the set-up was more intuitive than Cyberduck, but Filezilla stopped working on my computer and I couldn't figure out what the problem was so I switched to Cyberduck. YMMV
 
 ### From NCBI:
+Program: [SRAtoolkit](https://github.com/ncbi/sra-tools) (available on Quest)
 
-When conducting a meta-analysis where you have identified data that needs to be retrieved from the sequencing read archive (SRA) on NCBI, you can directly download those data files to Quest from NCBI using the [SRA toolkit](https://github.com/ncbi/sra-tools):
+When conducting a meta-analysis where you have identified data that needs to be retrieved from the sequencing read archive (SRA) on NCBI, you can directly download those data files to Quest from NCBI using the SRA toolkit:
 
-module load sratoolkit /
+module load sratoolkit 
+
 fasterqdump SRR########
 
 In this manner you can import single and paired end reads into the working directory one at a time. For studies with a large number of samples to import, we can use an awk command to create a bash script to do the work for us. First, download the accession list from the project site on NCBI. This should take the form of a list of SRA accession numbers like this:
@@ -33,9 +35,10 @@ etc.
 
 #### awk 
 
-An awk command can create a bash script for large sample sets by repeating the same command on a list of items line by line. So, we can use the accession list we retrieved from SRA to download the desired files. You can see an example of a simple awk created to import a list of files [here](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.awk). Once the awk is created, you can create your bash script using the following awk command:
+An awk command can create a bash script for large sample sets by repeating the same command on a list of items line by line. So, we can use the accession list we retrieved from SRA to download the desired files. You can see an example of a simple awk created to import a list of files [here](https://github.com/sahutt/NOBPhage/blob/main/bash/fasterqdump.awk). Once the awk is created, you can create your bash script using the following awk command on the command line:
 
 awk -f file.awk list.txt > fasterqdump.sh
+
 the command takes the awk script you just made, and the accession list text file then creates the bash script document you want
 
 Now we should have a document in your working directory that looks like this:
@@ -52,13 +55,13 @@ Add your header to the [bash script](https://github.com/sahutt/NOBPhage/blob/mai
 
 # QC - Quality Control
 
-Now that you have your reads safely imported and compressed on quest, we can fun quality control. 
+Now that you have your reads safely imported and compressed on quest, we can run quality control to see what type of pre-processing our reads need. 
+
 ## Raw Read QC Check 
 
-Program: FastQC
-Module available on Quest
+Program: FastQC and multiQC (Both available on Quest)
 
-First, we need to check the quality of our metagenomic reads and determine what type of quality control steps are necessary. 
+FastQC is a program that we can use to check the quality of raw reads output by high throughput sequencing.
 
 
 Add - creating a conda environment 
@@ -66,7 +69,10 @@ Add - creating a conda environment
 # Read Trimming 
 
 
-[fastp](https://github.com/OpenGene/fastp) 
+Program: [fastp](https://github.com/OpenGene/fastp) 
+fastp is not available on Quest, but can be installed through bioconda and accessed through a conda environment
+
+Other common programs for read trimming: Trimmomatic, cutadapt, fastxtoolkit
 
 
 
@@ -107,6 +113,11 @@ Metawrap includes read alignment in the module.
 
 [VIBRANT](https://github.com/AnantharamanLab/VIBRANT)  
 [Virsorter2](https://github.com/jiarong/VirSorter2)    
+
+## vConTACT2 
+
+vibrant and demovir
+virsorter and vcontact
 
 # CRISPRCasFinder and CRISPR Target
 
