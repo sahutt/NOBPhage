@@ -19,9 +19,10 @@ Program: [SRAtoolkit](https://github.com/ncbi/sra-tools) (available on Quest)
 
 When conducting a meta-analysis where you have identified data that needs to be retrieved from the sequencing read archive (SRA) on NCBI, you can directly download those data files to Quest from NCBI using the SRA toolkit:
 
+```
 module load sratoolkit 
-
 fasterqdump SRR########
+```
 
 In this manner you can import single and paired end reads into the working directory one at a time. For studies with a large number of samples to import, we can use an awk command to create a bash script to do the work for us. First, download the accession list from the project site on NCBI. This should take the form of a list of SRA accession numbers like this:
 
