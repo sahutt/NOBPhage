@@ -109,7 +109,4 @@ run CheckV
 
 ---
 
-## Demovir   
-...maybe
-
 ## vC
