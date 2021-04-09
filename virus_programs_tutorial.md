@@ -4,8 +4,7 @@ The purpose of this document is to provide a brief overview of the installation 
 Jump to:  
 [VirSorter2](#virsorter2)  
 [VIBRANT](#vibrant)  
-[CheckV](#checkv)  
-[Demovir](#demovir)
+[CheckV](#checkv) 
 
 
 ## VirSorter2
