@@ -26,9 +26,10 @@ fastqc -t 12 *.fastq.gz
 mv *fastqc.html ../results/fastqc
 mv *fastqc.zip ../results/fastqc
 
-# For easy analysis, multiqc will compile all fastqc outputs into one output file which can be downloaded and /
-# visualized on the multiqc website: https://multiqc.info/
-# load multiqc and then execute the command on all files in the working directory using a period
+# For easy analysis, multiqc will compile all fastqc outputs into one output file which can be downloaded and viewed /
+# as an .html file
+# move to the results directory, load multiqc and then execute the command on all files in the working directory using a period
 
+cd ../results/fastqc
 module load multiqc
 multiqc .
