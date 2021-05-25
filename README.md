@@ -114,6 +114,11 @@ Metawrap includes read alignment in the module.
 vibrant and demovir
 virsorter and vcontact
 
+##PHASTER
+
+wget --post-file="contigs.fna" "http://phaster.ca/phaster_api?contigs=1" -O Output_filename
+
+
 # CRISPRCasFinder and CRISPR Target
 
 
