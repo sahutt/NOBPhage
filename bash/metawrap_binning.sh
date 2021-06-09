@@ -4,7 +4,7 @@
 #SBATCH -N 1
 #SBATCH -n 5
 #SBATCH -t 12:00:00
-#SBATCH --mem=20GB
+#SBATCH --mem=25GB 
 #SBATCH --job-name="metawrap__metaspades_binning_firstbatch"
 #SBATCH --mail-user=stefaniehuttelmaier2024@u.northwestern.edu
 #SBATCH --mail-type=ALL
