@@ -102,12 +102,28 @@ Metawrap includes read alignment in the module.
 ## CheckV 
 [CheckV](https://bitbucket.org/berkeleylab/checkv/src/master/) - installed in conda-envs/checkv in p31378 (source activate checkv)  
 
-  
-
 # Phage identification and annotation  
 
 [VIBRANT](https://github.com/AnantharamanLab/VIBRANT)  
 [Virsorter2](https://github.com/jiarong/VirSorter2)    
+
+## Demovir
+[demovir](https://github.com/feargalr/Demovir)
+
+Demovir is used taxonomically classify viral contigs to the family and order level. Installation is a little convoluted. A working installation is currently available here:
+/projects/b1052/shared/Demovir
+
+If you want to install your own version you will need to follow these steps (instructions are available at the demovir github, these are just more granular):
+
+1. git clone https://github.com/feargalr/Demovir
+2. download the database to the demovir directory: https://figshare.com/articles/NR_Viral_TrEMBL/5822166
+3. install [usearch](http://www.drive5.com/usearch/download.html) in the demovir directory
+4. give yourself permission using the command 'chmod +x ./usearch'
+5. make the appropriate changes and execute the format_db.sh (this does not have to be submitted as a bash script. Just copy and past the commands to the command line)
+
+Other dependencies available on Quest: R, Prodifal and bzip2
+
+
 
 ## vConTACT2 
 
