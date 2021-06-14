@@ -121,11 +121,24 @@ If you want to install your own version you will need to follow these steps (ins
 4. give yourself permission using the command 'chmod +x ./usearch'
 5. make the appropriate changes and execute the format_db.sh (this does not have to be submitted as a bash script. Just copy and past the commands to the command line)
 
-Other dependencies available on Quest: R, Prodifal and bzip2
+Other dependencies available on Quest: R, Prodigal and bzip2
 
 
+prodigal -a AA.fasta -i /projects/b1052/Wells_b1042/Stefanie/toothbrushes/VIBRANT/metaspades/SRR10744092/VIBRANT_scaffolds/VIBRANT_phages_scaffolds/scaffolds.phages_combined.fna -p meta &> /dev/null
+./usearch -ublast AA.fasta -db uniprot_trembl.viral.udb -evalue 1e-5 -blast6out trembl_ublast.viral.txt -threads 1
+sort -u -k1,1 trembl_ublast.viral.txt > trembl_ublast.viral.u.txt
+rm AA.fasta
+cut -f 1,2 trembl_ublast.viral.u.txt | sed 's/_[0-9]\+\t/\t/' | cut -f 1 | paste trembl_ublast.viral.u.txt - > trembl_ublast.viral.u.contigID.txt
+rm trembl_ublast.viral.u.txt trembl_ublast.viral.txt
+Rscript $DIR/demovir.R
+rm trembl_ublast.viral.u.contigID.txt
 
 ## vConTACT2 
+
+# Installing a conda 
+
+module load  python/anaconda3.6
+conda create -y --prefix ./vcontact2 python=3
 
 vibrant and demovir
 virsorter and vcontact
@@ -140,11 +153,10 @@ wget --post-file="contigs.fna" "http://phaster.ca/phaster_api?contigs=1" -O Outp
 
 Other programs:
 Phage annotation only   
-[Demovir](https://github.com/feargalr/Demovir) - not actively developed  
 Prokka?
 …
 
-# Installing a conda 
+
 
 
 
