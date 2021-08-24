@@ -104,8 +104,18 @@ Metawrap includes read alignment in the module.
 
 # Phage identification and annotation  
 
-[VIBRANT](https://github.com/AnantharamanLab/VIBRANT)  
-[Virsorter2](https://github.com/jiarong/VirSorter2)    
+##[VIBRANT](https://github.com/AnantharamanLab/VIBRANT)  
+
+
+##[Virsorter2](https://github.com/jiarong/VirSorter2) 
+
+
+##[metaviralSPADes](https://academic.oup.com/bioinformatics/article/36/14/4126/5837667)
+
+Metaviralspades uses a variation of the spades assembly algorithm to detect potential viral sequences within metagenomic data. The viralComplete package that is suggested for use to verify and check for completeness of viral contigs has not been updated in 2 years and is not compatible with current blast and prodigal dependencies. We have used checkv to verify viral contigs instead.
+
+
+##[checkv](https://bitbucket.org/berkeleylab/checkv/src/master/) 
 
 ## Demovir
 [demovir](https://github.com/feargalr/Demovir)
