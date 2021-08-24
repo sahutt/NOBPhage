@@ -126,7 +126,7 @@ Metawrap includes read alignment in the module.
 Metaviralspades uses a variation of the spades assembly algorithm to detect potential viral sequences within metagenomic data. The viralComplete package that is suggested for use to verify and check for completeness of viral contigs has not been updated in 2 years and is not compatible with current blast and prodigal dependencies. We have used checkv to verify viral contigs instead.
 
 
-### [checkv](https://bitbucket.org/berkeleylab/checkv/src/master/)
+### [CheckV](https://bitbucket.org/berkeleylab/checkv/src/master/)
 CheckV is used to check the completeness of viral genomes. It is installed in conda-envs/checkv in p31378.
 ```
 source activate /projects/p31378/conda_envs/checkv
@@ -139,8 +139,7 @@ checkv download_database ./
 export CHECKVDB=/projects/p31378/conda_envs/checkv/checkv-db-v1.0
 ```
 
-### Demovir
-[demovir](https://github.com/feargalr/Demovir)
+### [Demovir](https://github.com/feargalr/Demovir)
 
 Demovir is used taxonomically classify viral contigs to the family and order level. Installation is a little convoluted. A working installation is currently available here:
 /projects/b1052/shared/Demovir
