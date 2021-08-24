@@ -135,7 +135,7 @@ rm trembl_ublast.viral.u.contigID.txt
 
 ## vConTACT2 
 
-# Installing a conda 
+# Installing a conda environment
 
 module load  python/anaconda3.6
 conda create -y --prefix ./vcontact2 python=3
