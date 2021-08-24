@@ -114,7 +114,17 @@ Metaviralspades uses a variation of the spades assembly algorithm to detect pote
 
 
 ## [checkv](https://bitbucket.org/berkeleylab/checkv/src/master/) 
-installed in conda-envs/checkv in p31378 (source activate checkv)  
+CheckV is used to check the completeness of viral genomes. It is installed in conda-envs/checkv in p31378.
+```
+source activate /projects/p31378/conda_envs/checkv
+```
+CheckV was installed using conda:
+```
+conda create --prefix /projects/p31378/conda_envs/checkv -c conda-forge -c bioconda checkv
+source activate checkv
+checkv download_database ./
+export CHECKVDB=/projects/p31378/conda_envs/checkv/checkv-db-v1.0
+```
 
 ## Demovir
 [demovir](https://github.com/feargalr/Demovir)
@@ -132,7 +142,7 @@ If you want to install your own version you will need to follow these steps (ins
 
 Other dependencies available on Quest: R, Prodigal and bzip2
 
-
+```
 prodigal -a AA.fasta -i /projects/b1052/Wells_b1042/Stefanie/toothbrushes/VIBRANT/metaspades/SRR10744092/VIBRANT_scaffolds/VIBRANT_phages_scaffolds/scaffolds.phages_combined.fna -p meta &> /dev/null
 ./usearch -ublast AA.fasta -db uniprot_trembl.viral.udb -evalue 1e-5 -blast6out trembl_ublast.viral.txt -threads 1
 sort -u -k1,1 trembl_ublast.viral.txt > trembl_ublast.viral.u.txt
@@ -141,6 +151,7 @@ cut -f 1,2 trembl_ublast.viral.u.txt | sed 's/_[0-9]\+\t/\t/' | cut -f 1 | paste
 rm trembl_ublast.viral.u.txt trembl_ublast.viral.txt
 Rscript $DIR/demovir.R
 rm trembl_ublast.viral.u.contigID.txt
+```
 
 ## vConTACT2 
 
