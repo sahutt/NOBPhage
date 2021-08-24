@@ -70,9 +70,9 @@ Now that you have your reads safely imported and compressed on quest, we can run
 
 Program: FastQC and multiQC (Both available on Quest)
 
-FastQC is a program that we can use to check the quality of raw reads that have been output by high throughput sequencing. FastQC will check
+FastQC is a program that we can use to check the quality of raw reads that have been output by high throughput sequencing. 
 
-Add - creating a conda environment
+
 
 ### Read Trimming
 
