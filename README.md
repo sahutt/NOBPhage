@@ -99,10 +99,8 @@ Metawrap includes read alignment in the module.
 
 ## CheckM - bacterial MAG completion and contamination check
 
-## CheckV 
-[CheckV](https://bitbucket.org/berkeleylab/checkv/src/master/) - installed in conda-envs/checkv in p31378 (source activate checkv)  
 
-# Phage identification and annotation  
+# Phage/Virus identification and annotation  
 
 ## [VIBRANT](https://github.com/AnantharamanLab/VIBRANT)  
 
@@ -116,6 +114,7 @@ Metaviralspades uses a variation of the spades assembly algorithm to detect pote
 
 
 ## [checkv](https://bitbucket.org/berkeleylab/checkv/src/master/) 
+installed in conda-envs/checkv in p31378 (source activate checkv)  
 
 ## Demovir
 [demovir](https://github.com/feargalr/Demovir)
