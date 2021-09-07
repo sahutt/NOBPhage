@@ -103,6 +103,15 @@ Spades 3.15 - new version not on quest, can install onto quest but error during 
 Spades 3.15 GitHub - https://cab.spbu.ru/files/release3.15.0/manual.html
 MetaViralSpades pub: https://academic.oup.com/bioinformatics/article-abstract/36/14/4126/5837667
 
+## Check Assembly Quality 
+
+Once you have your assembly outputs from your preferred assembler, you can check the quality of your assembly using QUAST.
+
+[QUAST](http://quast.sourceforge.net/install.html) 
+
+QUAST stands for Quality Assessment Tool for Genome Assemblies. It outputs assembling metrics that allow you to determine the overall quality of your assembly, like contig length and distributions. QUAST is not available on Quest, you will need to 
+
+
 ## MAG Binning  
 [Metawrap](https://github.com/bxlab/metaWRAP)
 
