@@ -183,7 +183,12 @@ wget --post-file="contigs.fna" "http://phaster.ca/phaster_api?contigs=1" -O Outp
 
 
 ## CRISPR identification and analysis
-### CRISPRCasFinder and CRISPR Target
+### CRISPRCasFinder
+
+[Crisprcasfinder](https://crisprcas.i2bc.paris-saclay.fr/CrisprCasFinder/Index) detects crispr arrays and cas genes within fasta files. You can upload single fasta files to their website for analysis, or version 4.2.20 is available as a module on Quest.
+
+Note: If you can avoid it, do not use underscores in fasta names as crisprcasfinder extract only to the first underscore for the name of the output file. Does not appear to be a way to fix this. You need some way to identify your outputs.
+
 
 
 Other programs:
