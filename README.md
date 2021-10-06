@@ -183,6 +183,10 @@ wget --post-file="contigs.fna" "http://phaster.ca/phaster_api?contigs=1" -O Outp
 
 
 ## CRISPR identification and analysis
+
+Collect Reference Genomes for all known NOB, as well MAGs identified in previous steps as NOB
+
+
 ### CRISPRCasFinder
 
 [Crisprcasfinder](https://crisprcas.i2bc.paris-saclay.fr/CrisprCasFinder/Index) detects crispr arrays and cas genes within fasta files. You can upload single fasta files to their website for analysis, or version 4.2.20 is available as a module on Quest.
