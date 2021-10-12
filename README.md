@@ -184,7 +184,7 @@ wget --post-file="contigs.fna" "http://phaster.ca/phaster_api?contigs=1" -O Outp
 
 ## CRISPR identification and analysis
 
-Collect Reference Genomes for all known NOB, as well MAGs identified in previous steps as NOB
+Collect Reference Genomes for all known NOB, as well MAGs identified in previous steps as NOB. When importing fasta files for CRISPR detection, make sure to use names that do not have underscores. Crisprcasfinder extract only to the first underscore for the name of the output file. Does not appear to be a way to fix this. You need some way to identify your outputs. You can line files up based on when they ran, but this becomes difficult when processing large volumes of reference genomes/MAGs.
 
 
 ### CRISPRCasFinder
