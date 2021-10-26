@@ -1,0 +1,16 @@
+in quest command line
+making custom blast database from direct repeats from CRISPRCasFinder results of all the reference NOB genomes
+
+module load blast/2.12.0
+cd /projects/p31378/comammox/blast_dbs
+makeblastdb -in crisprcasfinder_sequences.fa -parse_seqids -dbtype nucl -out nob_dr
+
+
+very annoyingly, you have to always put the location of the blast db as the current working directory when you call blast in a bash script
+your commands will look like this, also see blast.sh
+
+module load blast/2.12.0
+
+cd /projects/p31378/comammox/blast_dbs
+
+blastn -query /path/to/sequences/of/interest -db nod -task blastn -evalue 0.01 -out /path/to/output/file.txt -outfmt 6

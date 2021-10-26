@@ -7,8 +7,8 @@
 #SBATCH -n 1
 #SBATCH --mail-type=BEGIN,END,FAIL
 #SBATCH --mail-user=mckennafarmer2023@u.northwestern.edu
-#SBATCH --output=out_blast.txt
-#SBATCH --error=err_blast.txt
+#SBATCH --output=out_bigblast.txt
+#SBATCH --error=err_bigblast.txt
 
 module purge all
 module load blast/2.12.0

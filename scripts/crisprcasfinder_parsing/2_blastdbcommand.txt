@@ -1,5 +1,0 @@
-in quest command line
-
-module load blast/2.11.0
-cd /projects/b1052/Wells_b1042/McKenna/Blast_db/nod
-makeblastdb -in nod.fasta -parse_seqids -dbtype nucl -out nod
