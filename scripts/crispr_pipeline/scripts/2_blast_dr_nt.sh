@@ -13,7 +13,7 @@
 module purge all
 module load blast/2.12.0
 
-cd /projects/genomicsshare/blast/nt
+cd /projects/genomicsshare/blast.20211015
 
 blastn -query /projects/p31378/comammox/results/crisprcasfinder/crisprcasfinder_sequences.fa \
 -db nt -task blastn -evalue 0.01 \
