@@ -1,0 +1,3 @@
+S16	/projects/p31378/comammox/results/crispr2/S16/pooled_S16_matched_1.fastq	/projects/p31378/comammox/results/crispr2/S16/pooled_S16_matched_2.fastq
+S17	/projects/p31378/comammox/results/crispr2/S17/pooled_S17_matched_1.fastq	/projects/p31378/comammox/results/crispr2/S17/pooled_S17_matched_2.fastq
+S18	/projects/p31378/comammox/results/crispr2/S18/pooled_S18_matched_1.fastq	/projects/p31378/comammox/results/crispr2/S18/pooled_S18_matched_2.fastq

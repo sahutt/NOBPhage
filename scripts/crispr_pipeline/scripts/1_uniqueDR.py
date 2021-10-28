@@ -22,6 +22,6 @@ df = pd.read_csv(in_path, header=0, sep=",")
 seq_id = df["DR_num"].tolist()
 seq_dr = df["Consensus_Repeat"].tolist()
 
-with open(out_sequences, "w") as outfile:
+with open(out_path, "w") as outfile:
     for i in range(len(seq_id)):
         outfile.write(">" + seq_id[i] + "\n" + seq_dr[i] + "\n")

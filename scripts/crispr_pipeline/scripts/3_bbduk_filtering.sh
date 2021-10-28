@@ -1,8 +1,8 @@
 #!/bin/bash
 #SBATCH --job-name="bbduk"
 #SBATCH -A p31378
-#SBATCH -p normal
-#SBATCH -t 10:00:00
+#SBATCH -p short
+#SBATCH -t 02:00:00
 #SBATCH -N 1
 #SBATCH -n 1
 #SBATCH --mem=20G
@@ -25,7 +25,7 @@ in2=/projects/p31378/comammox/raw_reads/SG_05_27_2016_S16_trimmed_2.fastq.gz \
 outm=/projects/p31378/comammox/results/crispr2/S16/pooled_S16_matched_1.fastq.gz \
 outm2=/projects/p31378/comammox/results/crispr2/S16/pooled_S16_matched_2.fastq.gz \
 k=23 mm=f \
-ref=/projects/p31378/comammox/results/crisprcasfinder/crisprcasfinder_sequences.fa \
+ref=/projects/p31378/comammox/results/crisprcasfinder/uniqueDR_sequences.fa \
 hdist=1 rcomp=T
 
 # s17
@@ -35,7 +35,7 @@ in2=/projects/p31378/comammox/raw_reads/SG_01_11_2017_S17_trimmed_2.fastq.gz \
 outm=/projects/p31378/comammox/results/crispr2/S17/pooled_S17_matched_1.fastq.gz \
 outm2=/projects/p31378/comammox/results/crispr2/S17/pooled_S17_matched_2.fastq.gz \
 k=23 mm=f \
-ref=/projects/p31378/comammox/results/crisprcasfinder/crisprcasfinder_sequences.fa \
+ref=/projects/p31378/comammox/results/crisprcasfinder/uniqueDR_sequences.fa \
 hdist=1 rcomp=T
 
 # s18
@@ -45,5 +45,5 @@ in2=/projects/p31378/comammox/raw_reads/SG_07_05_2017_S18_trimmed_2.fastq.gz \
 outm=/projects/p31378/comammox/results/crispr2/S18/pooled_S18_matched_1.fastq.gz \
 outm2=/projects/p31378/comammox/results/crispr2/S18/pooled_S18_matched_2.fastq.gz \
 k=23 mm=f \
-ref=/projects/p31378/comammox/results/crisprcasfinder/crisprcasfinder_sequences.fa \
+ref=/projects/p31378/comammox/results/crisprcasfinder/uniqueDR_sequences.fa \
 hdist=1 rcomp=T
