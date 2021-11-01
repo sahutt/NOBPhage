@@ -198,4 +198,3 @@ Note: If you can avoid it, do not use underscores in fasta names as crisprcasfin
 Other programs:
 Phage annotation only   
 Prokka?
-…
