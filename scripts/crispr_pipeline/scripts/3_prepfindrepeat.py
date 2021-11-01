@@ -12,7 +12,7 @@ out_path = "/projects/p31378/comammox/results/crispr2/python_commands.txt"
 
 
 # path where findRepeatCRISPR.py is saved
-script_path = "/projects/p31378/comammox/scripts/findRepeatCRISPR.py"
+# script_path = "/projects/p31378/comammox/scripts/findRepeatCRISPR.py"
 # source file for findrepeatCRISPR.py
 source_path = "/projects/p31378/comammox/results/crispr2/sourcefile.txt"
 
@@ -36,7 +36,7 @@ commands = [] # empty list where each command will go
 for i in range(len(seq_dr)):
     out_name = seq_id[i] + ".txt"
     out = os.path.join(out_template, out_name)
-    line = " ".join(["python",script_path,seq_dr[i],source_path,out])
+    line = " ".join([seq_dr[i],source_path,out])
     commands.append(line)
 
 with open(out_path, "w") as outfile:
