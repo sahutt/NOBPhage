@@ -1,5 +1,6 @@
 #!/usr/bin/env python2.7
 
+##Python scripts in the CRISPR pipeline retrieved from: https://github.com/GuerreroCRISPR/Gordonia-CRISPR
 
 from Bio import pairwise2, SeqIO
 from Bio.Seq import reverse_complement
