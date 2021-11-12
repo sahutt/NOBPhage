@@ -198,3 +198,20 @@ Note: If you can avoid it, do not use underscores in fasta names as crisprcasfin
 Other programs:
 Phage annotation only   
 Prokka?
+
+## Submitting an Array Job to Quest
+
+## Making Text Files using Output File Lists from the Command Line
+
+When running arrays, you'll often need a command text for your bash script as demonstrated above. Often you'll need output files from one program to feed into the next. Here is a simple way to use the command line to create new text files that can be used with awk and arrays. 
+
+Make a single column list:
+
+```
+ls *.txt > filelist.txt
+```
+The ls command lists all files in your current directory. The asterisk can be used to flag a specific file type you want to grab, in this case all txt files in the given directory. You can then create an output file containing what prints from the list command. 
+
+[Make 2+ column file lists](https://unix.stackexchange.com/questions/229116/add-append-a-column-as-first-column-to-a-tab-delimited-file):
+
+If you need append columns onto 
