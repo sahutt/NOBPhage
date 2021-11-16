@@ -2,6 +2,8 @@
 
 The purpose of the git repository is to act as a guide through a bioinformatics pipeline meant for finding bacteriophage and prophage in metagenomic datasets. All bash scripts are meant for use on the Northwestern HPCC Quest.
 
+###ADD GUERERO CITATION PAPER AND GITHUB
+
 ## Getting your Data Onto Quest
 
 ### Directly from your computer:
