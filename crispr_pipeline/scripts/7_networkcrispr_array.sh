@@ -2,7 +2,7 @@
 #SBATCH -J networkcrispr_test_array
 #SBATCH -A p31378
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=stefaniehuttelmaier2024@u.northwestern.edu
+#SBATCH --mail-user=@u.northwestern.edu
 #SBATCH -N 1
 #SBATCH -n 5
 #SBATCH --mem=5GB
