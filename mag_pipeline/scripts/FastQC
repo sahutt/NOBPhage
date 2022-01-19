@@ -1,0 +1,35 @@
+#!/bin/sh
+#SBATCH -A p30712
+#SBATCH -p short
+#SBATCH -N 1
+#SBATCH -n 12
+#SBATCH -t 01:00:00
+#SBATCH --mem=4gb
+#SBATCH --job-name="run_fastqc"
+#SBATCH --mail-user=@u.northwestern.edu
+#SBATCH --mail-type=ALL
+#SBATCH --output=/projects/p30712/phage/results/fastqc/fastqc.out
+#SBATCH --error=/projects/p30712/phage/results/fastqc/fastqc.err
+
+module purge all
+
+# load modules
+module load fastqc
+
+# Set working directory
+cd /projects/p30712/phage/raw_reads
+
+# The command to execute, perform qc on all files with fq.gz extension, 12 files run in parallel on 12 threads:
+fastqc -t 12 *.fastq.gz
+
+# Move output files to results directory
+mv *fastqc.html ../results/fastqc
+mv *fastqc.zip ../results/fastqc
+
+# For easy analysis, multiqc will compile all fastqc outputs into one output file which can be downloaded and viewed /
+# as an .html file
+# move to the results directory, load multiqc and then execute the command on all files in the working directory using a period
+
+cd ../results/fastqc
+module load multiqc
+multiqc .
