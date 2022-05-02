@@ -153,9 +153,12 @@ If you want to install your own version you will need to follow these steps (ins
 
 1. git clone https://github.com/feargalr/Demovir
 2. download the database to the demovir directory: https://figshare.com/articles/NR_Viral_TrEMBL/5822166
-3. install [usearch](http://www.drive5.com/usearch/download.html) in the demovir directory
-4. give yourself permission using the command 'chmod +x ./usearch'
-5. make the appropriate changes and execute the format_db.sh (this does not have to be submitted as a bash script. Just copy and past the commands to the command line)
+3. put the [usearch](http://www.drive5.com/usearch/download.html) file in the demovir directory
+   - click the option for university compute clusters at the top of the screen to get the file by email
+   - download it to your computer and transfer via Winscp
+   - change the name of the file to 'usearch', no need for any type of installation
+5. give yourself permission using the command 'chmod +x ./usearch'
+6. make the appropriate changes and execute the format_db.sh (this does not have to be submitted as a bash script. Just copy and past the commands to the command line)
 
 Other dependencies available on Quest: R, Prodigal and bzip2
 
