@@ -214,3 +214,25 @@ The ls command lists all files in your current directory. The asterisk can be us
 [Make 2+ column file lists](https://unix.stackexchange.com/questions/229116/add-append-a-column-as-first-column-to-a-tab-delimited-file):
 
 If you need append columns onto 
+
+## CRASS and Crisprtools
+
+[Crass](http://ctskennerton.github.io/crass/Tutorial.html):
+[Crisprtools](http://ctskennerton.github.io/crisprtools/): 
+
+Both are available as modules on Quest
+
+CRISPR Assembler searches for repeats in filtered reads and assembles them into CRISPR arrays, outputs can be split into spacer and direct repeats fastas, and arrays can be visualized in Graphviz
+
+Manipulating .crispr files with Crisprtools:
+
+```
+module load crisprtools
+crisprtools stat --header crass.crispr > matched_pooled_crass.crispr.tsv
+crisprtools extract -s crass.crispr > matched_pooled_spacers.fasta
+
+```
+
+The stat command will produce a statistical summary of the identified direct repeats and associated spacers
+The extract command using the -s flag produces a fasta file of extracted spacers, -d for direct repeats
+See documentation for clear description of outher crisprtools functions
