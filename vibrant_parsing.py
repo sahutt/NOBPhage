@@ -23,7 +23,6 @@ filt_level = "low" # the level you want to remove
 ### these lines stay the same ###
 
 import os
-import csv
 import pandas as pd
 from Bio import SeqIO
 
