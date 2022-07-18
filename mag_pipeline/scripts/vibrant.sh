@@ -15,3 +15,8 @@ module purge all
 module load python
 
 source activate /projects/p31378/conda_envs/vibrant
+
+VIBRANT_run.py -i /projects/b1052/Wells_b1042/Stefanie/NOB/CMX/metaspades/SG_01_11_2017/scaffolds.fasta -t 10 -d /projects/p31378/conda_envs/vibrant/databases -folder /projects/b1052/Wells_b1042/Stefanie/NOB/CMX/vibrant/SG_01_11_2017
+VIBRANT_run.py -i /projects/b1052/Wells_b1042/Stefanie/NOB/CMX/metaspades/SG_07_05_2017/scaffolds.fasta -t 10 -d /projects/p31378/conda_envs/vibrant/databases -folder /projects/b1052/Wells_b1042/Stefanie/NOB/CMX/vibrant/SG_07_05_2017
+VIBRANT_run.py -i /projects/b1052/Wells_b1042/Stefanie/NOB/CMX/metaspades/SG_05_27_2016/scaffolds.fasta -t 10 -d /projects/p31378/conda_envs/vibrant/databases -folder /projects/b1052/Wells_b1042/Stefanie/NOB/CMX/vibrant/SG_05_27_2016
+ 
